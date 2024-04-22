@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Expense Tracker</h1>
+        <div class="forms-container">
+            <form id="registrationForm" class="form register-form" style="display: none;">
+                <h2>Register</h2>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <input type="text" id="username" name="username" placeholder="Username" required>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <button type="submit">Register</button>
+                <p class="message">Already have an account? <a href="#" id="showLoginForm">Login</a></p>
+            </form>
+            <form id="loginForm" class="form login-form">
+                <h2>Login</h2>
+                <input type="email" id="loginEmail" name="loginEmail" placeholder="Email" required>
+                <input type="password" id="loginPassword" name="loginPassword" placeholder="Password" required>
+                <button type="submit">Login</button>
+                <p class="message">Don't have an account? <a href="#" id="showRegistrationForm">Register</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
